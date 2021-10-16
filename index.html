@@ -51,6 +51,10 @@
             color: #fff;
         }
 
+        .cover {
+            background: no-repeat center/cover;
+        }
+
         .service-style {
             margin-top: 15px;
             background-color: transparent;
@@ -63,10 +67,13 @@
         .text-green {
             color: #0b9b6b;
         }
+
         .bg-dark {
             background-color: #f25757;
         }
-        h2:before, h2:after {
+
+        h2:before,
+        h2:after {
             background-color: #0b9b6b;
             content: "";
             display: inline-block;
@@ -75,10 +82,12 @@
             vertical-align: middle;
             width: 25%;
         }
+
         h2:before {
             right: 0.5rem;
             margin-left: -50%;
         }
+
         h2:after {
             left: 0.5rem;
             margin-right: -50%;
@@ -99,28 +108,26 @@
             <div class="collapse navbar-collapse" id="navbarSContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
+                        <a class="nav-link" href="#service">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
+                        <a class="nav-link" href="#product">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
-
-
     </nav>
     <!-- Header -->
-    <section class="jumbotron jumbotron-fluid background-header">
+    <section id="home" class="jumbotron jumbotron-fluid background-header">
         <div class="container-fluid text-center">
             <h1 class="display-3" style="color: aliceblue;">Solusi Terbaik Belajarmu</h1>
             <p class="lead" style="font-weight: bold;color: white;">Kami menyediakan banyak modul yang kamu butuhkan
@@ -130,7 +137,7 @@
         </div>
     </section>
     <!-- Service -->
-    <section id="servise" class="service-style container-fluid container-fluid-max">
+    <section id="service" class="service-style container-fluid container-fluid-max">
         <div class="row text-center">
             <div class="col-12 pb-4">
                 <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">
@@ -231,13 +238,54 @@
             </div>
         </div>
     </section>
+    <!-- about -->
+    <section id="about" class="bg-light">
+        <div class="container-fluid">
+            <h2 class="display-4 text-center mb-5" style="margin-top: 5rem!important;">Tentang Kami</h2>
+            <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+                    <div style="padding: 15px;">
+                        <h3 class="display-5 text-center text-green mt-3 mb-3">Judul Pertama</h3>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="col-12 pt-3 text-center">
+                            <a class="btn btn-lg bg-dark text-white" href="" target="_blank"
+                                role="button">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('assets/images/banner3.jpg');"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('assets/images/banner2.jpg');"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div style="padding: 15px;">
+                        <h3 class="display-5 text-center text-green mt-3 mb-3">Judul Kedua</h3>
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="col-12 pt-3 text-center">
+                            <a class="btn btn-lg bg-dark text-white" href="" target="_blank"
+                                role="button">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- kontak -->
+    <section id="contact" class="container-fluid text-center" style="border-color: #e9f2eb; padding: 25px;">
+        <h2 class="display-4 pb-4">Hubungi Kami Sekarang</h2>
+        <p class="lead pb-3">Kirim pesan untuk bergabung bersama kami.</p>
+        <a href="" class="btn btn-lg button-primer mb-4">WhatsApp Kami</a>
+    </section>
     <!-- Footer -->
     <footer class="bg-dark">
         <div class="col-lg-12" style="padding: 10px">
             <div style="text-align: center;">
                 <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-instagram"></i></a>
+                <a href="instagram.com/rltaaa_" class="text-light" style="padding: 5px;"><i
+                        class="fab fa-instagram"></i></a>
             </div>
             <p class="text-center text-secondary">Copyright &copy Rulita_Deli</p>
         </div>
